@@ -1,0 +1,21 @@
+﻿<Window x:Class="Sistema_de_Informaciones_Hotel.MainWindow"       
+        FontFamily="pack://application:,,,/materialDesignThemes.Wpf;component/Resources/Roboto/#R"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sistema_de_Informaciones_Hotel"  
+        mc:Ignorable="d"
+        Title="MainWindow" Height="380" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Opacity="0.95">
+    <Grid Background="Black">
+        <Canvas Background="White" Margin="3,0,0,0">
+            <TextBox x:Name="tbxusuario" Height="60" materialDesign:HintAssist.Hint="Usuario" Canvas.Left="179" TextWrapping="Wrap" Canvas.Top="50" Width="300" BorderBrush="#FF21CCEF" materialDesign:HintAssist.IsFloating="True" Foreground="#FF5270FF" FontSize="25" FontWeight="Bold" />
+            <PasswordBox x:Name="tbpassword" Height="69" materialDesign:HintAssist.Hint="Contraseña" Canvas.Left="179" Canvas.Top="139" Width="300" materialDesign:HintAssist.IsFloating="True" BorderBrush="#FF21CCEF" Foreground="#FF5270FF" FontSize="25" FontWeight="Bold" />
+            <Button Canvas.Left="165" Canvas.Top="272" Height="35" Width="138" Content="Ingresar" x:Name="Ingreso" Background="#FF5270FF" Foreground="#DDFBFBFB" Click="Ingreso_Click" />
+            <Button Canvas.Left="340" Canvas.Top="272" Width="139" Background="#FFD4252B" BorderBrush="#FFD4252B" x:Name="cancelar" Foreground="#ffffff" Content="Cancelar" Click="cancelar_Click" Height="34" />
+            <materialDesign:PackIcon Kind="Account" Height="125" Width="70" Canvas.Left="47" Canvas.Top="94" Foreground="#FF5FC2FB"/>
+        </Canvas>
+
+    </Grid>
+</Window>
